@@ -1,0 +1,22 @@
+{
+  "name": "ru-proxy-pac",
+  "version": "1.0.0",
+  "description": "Shadowsocks PAC (Proxy Auto-Configuration file) for Russia",
+  "main": "src/pac.ts",
+  "scripts": {
+    "style": "prettier . --write",
+    "serve": "node serve-local.mjs",
+    "build": "node esbuild-config.mjs"
+  },
+  "keywords": [
+    "pac"
+  ],
+  "author": "Ctulhu VPN",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "0.24.0",
+    "gh-pages": "^6.2.0",
+    "prettier": "3.4.2",
+    "typescript": "^5.7.2"
+  }
+}
