@@ -1,1 +1,1 @@
-export const customUrls: RegExp[] = [/shadowsocks.org/]
+export const customUrls: RegExp[] = [/gemini.google.com/, /shadowsocks.org/]
