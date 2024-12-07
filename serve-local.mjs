@@ -2,6 +2,8 @@ import http from "http"
 import fs from "fs/promises"
 import path from "path"
 import { fileURLToPath } from "url"
+import * as esbuild from "esbuild"
+import { esOptions } from "./esbuild-config.mjs"
 
 // Getting the path to the current file and directory
 const __filename = fileURLToPath(import.meta.url)
@@ -25,6 +27,10 @@ const server = http.createServer(async (_, res) => {
 })
 
 // Starting the server
-server.listen(port, () => {
-  console.log(`Server started at http://localhost:${port}`)
+server.listen(port, async () => {
+  console.log(`\nServer started at http://localhost:${port}\n`)
+
+  // Watch for files changes
+  const esContext = await esbuild.context(esOptions)
+  await esContext.watch()
 })

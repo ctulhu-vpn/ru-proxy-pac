@@ -6,7 +6,7 @@ const BANNER_TEXT = `/**
  */
 `
 
-await esbuild.build({
+export const esOptions = {
   entryPoints: ["src/pac.ts"],
   bundle: true,
   outfile: "build/proxy.pac",
@@ -18,4 +18,6 @@ await esbuild.build({
   banner: {
     js: BANNER_TEXT,
   },
-})
+}
+
+await esbuild.build(esOptions)
