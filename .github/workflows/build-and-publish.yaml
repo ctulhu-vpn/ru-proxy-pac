@@ -3,7 +3,7 @@ name: Build and Publish proxy.pac
 on:
   push:
     paths:
-      - "src/pac.ts" # Trigger on changes to src/pac.ts
+      - "src/**" # Trigger on changes to src/pac.ts
       - ".github/workflows/build-and-publish.yaml" # Trigger on changes to CI/CD file
 
 jobs:
