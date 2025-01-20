@@ -18,6 +18,7 @@ export const esOptions = {
   banner: {
     js: BANNER_TEXT,
   },
+  minify: false,
 }
 
 await esbuild.build(esOptions)
