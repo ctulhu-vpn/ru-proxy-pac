@@ -13,7 +13,7 @@ The repository contains two branches:
 
 ### 1. Get the PAC file
 
-To use the proxy configuration, simply [copy raw URL or download the latest `proxy.pac` file from the `build` branch.](https://github.com/ctulhu-vpn/ru-proxy-pac/blob/build/proxy.pac)
+To use the proxy configuration, simply [copy raw URL or download the latest `proxy.pac` file from the `build` branch.](https://raw.githubusercontent.com/ctulhu-vpn/ru-proxy-pac/refs/heads/build/proxy.pac)
 
 ### 2. Configuring Shadowsocks
 
