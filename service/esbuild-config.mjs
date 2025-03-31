@@ -14,13 +14,15 @@ export const esOptions = {
   outfile: "build/proxy.pac",
   target: "es6",
   format: "cjs",
-  minifySyntax: true,
   treeShaking: false,
   logLevel: "info",
   banner: {
     js: BANNER_TEXT,
   },
-  minify: true,
+  // Minify options
+  minifyIdentifiers: false,
+  minifyWhitespace: true,
+  minifySyntax: true,
 }
 
 await esbuild.build(esOptions)
