@@ -5,8 +5,9 @@
   "main": "src/pac.ts",
   "scripts": {
     "style": "prettier . --write",
-    "serve": "node serve-local.mjs",
-    "build": "node esbuild-config.mjs"
+    "serve": "node service/serve-local.mjs",
+    "build": "node service/esbuild-config.mjs prod",
+    "test": "node service/esbuild-config.mjs test && node build/proxy.pac",
   },
   "keywords": [
     "pac"

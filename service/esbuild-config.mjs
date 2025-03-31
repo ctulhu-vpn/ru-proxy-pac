@@ -6,8 +6,10 @@ const BANNER_TEXT = `/**
  */
 `
 
+const isTest = process.argv[2] === "test"
+
 export const esOptions = {
-  entryPoints: ["src/pac.ts"],
+  entryPoints: isTest ? ["tests/testURL.ts"] : ["src/pac.ts"],
   bundle: true,
   outfile: "build/proxy.pac",
   target: "es6",
