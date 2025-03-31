@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 // Specifying the file path
-const filePath = path.join(__dirname, "build", "proxy.pac")
+const filePath = path.join(__dirname, "../build", "proxy.pac")
 const port = 3032
 
 // Creating an HTTP server
