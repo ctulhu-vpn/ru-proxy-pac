@@ -8,6 +8,7 @@
     "serve": "node service/serve-local.mjs",
     "build": "node service/esbuild-config.mjs prod",
     "test": "node service/esbuild-config.mjs test && node build/proxy.pac",
+    "update-filters": "node service/update-re-filter.mjs"
   },
   "keywords": [
     "pac"
@@ -15,7 +16,7 @@
   "author": "Ctulhu VPN",
   "license": "MIT",
   "devDependencies": {
-    "esbuild": "0.24.0",
+    "esbuild": "^0.25.2",
     "gh-pages": "^6.2.0",
     "prettier": "3.4.2",
     "typescript": "^5.7.2"
