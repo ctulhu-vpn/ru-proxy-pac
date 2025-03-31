@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "src/**" # Trigger on changes to src/pac.ts
+      - "service/esbuild-config.mjs" # Trigger on changes build file
       - ".github/workflows/build-and-publish.yaml" # Trigger on changes to CI/CD file
 
 jobs:
