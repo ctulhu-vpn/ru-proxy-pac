@@ -1,6 +1,5 @@
 export const customUrls: RegExp[] = [
   /ant.design$/,
-  /chatgpt.com$/,
   /diffcheck.io$/,
   /gemini.google.com$/,
   /motion.dev$/,
