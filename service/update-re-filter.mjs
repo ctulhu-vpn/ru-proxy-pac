@@ -2,7 +2,7 @@ import { writeFile } from "fs/promises"
 
 // URL of the file to download
 const FILE_URL =
-  "https://github.com/1andrevich/Re-filter-lists/releases/latest/download/domains_all.lst"
+  "https://raw.githubusercontent.com/1andrevich/Re-filter-lists/refs/heads/main/community.lst"
 
 try {
   console.log("Downloading new filters...")
